@@ -14,6 +14,11 @@ public class BankResponse implements Serializable{
 		
 		return valid;
 	}
+	
+	
+	/**
+	 * @param valid
+	 */
 	public void setValid(String valid) {
 		
 		
