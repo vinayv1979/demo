@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - npm install nodemon
+       - echo "Entering build"
+       - npm install
+       - echo "Finishing build"
+artifacts:
+  files:
+    - '**/*'
