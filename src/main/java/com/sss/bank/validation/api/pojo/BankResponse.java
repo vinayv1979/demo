@@ -34,6 +34,19 @@ public class BankResponse implements Serializable{
 	private String valid;
 	private String bankname;
 	private String address;
+	
+	private String test;
+	
+	public String getTest() {
+		return test;
+	}
+
+
+	public void setTest(String test) {
+		this.test = test;
+	}
+
+
 	public String getAddress() {
 		return address;
 	}
