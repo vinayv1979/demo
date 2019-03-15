@@ -40,6 +40,9 @@ public class BankResponse implements Serializable{
 	
 	private String test;
 	
+	/**
+	 * @return
+	 */
 	public String getTest() {
 		return test;
 	}
