@@ -9,4 +9,5 @@ phases:
        - echo "Finishing build"
 artifacts:
   files:
+ 
     - '**/*'
