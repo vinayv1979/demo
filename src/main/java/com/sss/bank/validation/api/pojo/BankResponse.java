@@ -24,6 +24,9 @@ public class BankResponse implements Serializable{
 		
 		this.valid = valid;
 	}
+	/**
+	 * @return
+	 */
 	public String getBankname() {
 		return bankname;
 	}
