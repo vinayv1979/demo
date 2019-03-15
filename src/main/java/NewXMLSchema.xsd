@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="results">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="element" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="address_building"/>
+                    <xs:element type="xs:string" name="address_locality"/>
+                    <xs:element type="xs:string" name="address_org"/>
+                    <xs:element type="xs:string" name="address_street"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:string" name="delivery_point_suffix"/>
+                    <xs:element type="xs:string" name="post_town"/>
+                    <xs:element type="xs:string" name="postcode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:byte" name="totalResults"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
