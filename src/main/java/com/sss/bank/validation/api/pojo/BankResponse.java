@@ -9,6 +9,9 @@ public class BankResponse implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	public String getValid() {
+		
+		
+		
 		return valid;
 	}
 	public void setValid(String valid) {
