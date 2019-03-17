@@ -1,13 +1,23 @@
 version: 0.2
-
+environment_variables:
+plaintext:
+JAVA_HOME: "/opt/java-8-openjdk-amd64"
 phases:
-  build:
-    commands:
-       - npm install nodemon
-       - echo "Entering build"
-       - npm install
-       - echo "Finishing build"
+install:
+commands:
+- apt-get update -y
+- apt-get install -y maven
+pre_build:
+commands:
+- echo This is pre_build
+build:
+commands:
+- echo Starting build `date`
+- mvn clean install
+post_build:
+commands:
+- echo Build completed on `date`
 artifacts:
-  files:
- 
-    - '**/*'
+files:
+- target/*.jar
+discard-paths: yes
