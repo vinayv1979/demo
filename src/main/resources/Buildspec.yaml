@@ -1,13 +1,13 @@
 version: 0.2
-
 phases:
   build:
     commands:
-       - npm install nodemon
-       - echo "Entering build"
-       - npm install
-       - echo "Finishing build"
+      - echo Build started on `date`
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
 artifacts:
   files:
- 
-    - '**/*'
+    - target/sss-0.0.1-SNAPSHOT.jar
