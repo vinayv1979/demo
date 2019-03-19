@@ -19,7 +19,7 @@
 			</excludes>
 		</fileSet>
 		<fileSet>
-			<directory>${project.basedir}/bin</directory>
+			<directory>${project.basedir}/target/classes</directory>
 			<outputDirectory>/resources</outputDirectory>
 			<includes>
 				<include>*.xml</include>
