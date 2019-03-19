@@ -10,4 +10,4 @@ phases:
       - mvn clean package
 artifacts:
   files:
-    - target/sss-0.0.1-SNAPSHOT-dep.zip
+    - sss-0.0.1-SNAPSHOT-dep.zip
