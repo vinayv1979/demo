@@ -73,22 +73,11 @@
 
 
 	<build>
-		
 
-	<!-- <build>
 
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-			<resource>
-				<directory>${project.build.sourceDirectory}</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
- -->
+		<!-- <build> <resources> <resource> <directory>src/main/resources</directory> 
+			</resource> <resource> <directory>${project.build.sourceDirectory}</directory> 
+			<excludes> <exclude>**/*.java</exclude> </excludes> </resource> </resources> -->
 
 
 
@@ -117,16 +106,9 @@
 							</fileSet>
 						</fileSets>
 					</assembly>
-
-
 					<descriptor>NewFile.xml</descriptor>
-
-
 				</configuration>
 				<executions>
-
-
-
 					<execution>
 						<id>make-zip</id>
 						<phase>package</phase>
@@ -137,13 +119,21 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/lib</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
-
-
-
 	</build>
 </project>
 	
