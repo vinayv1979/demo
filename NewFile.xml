@@ -13,6 +13,7 @@
 		<fileSet>
 			<directory>${project.basedir}/target/classes</directory>
 			<outputDirectory>/</outputDirectory>
+			
 			<excludes>
 			<exclude>*.xml</exclude>
 			</excludes>
@@ -25,6 +26,19 @@
 			</includes>
 			<excludes>
 			<exclude>*.yaml</exclude>
+			<exclude>*.class</exclude>
+			<exclude>*.xsd</exclude>
+			</excludes>
+		</fileSet>
+		
+		<fileSet>
+			<directory>${project.basedir}</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+			<include>*.yaml</include>
+			</includes>
+			<excludes>
+			<exclude>*.xml</exclude>
 			<exclude>*.class</exclude>
 			<exclude>*.xsd</exclude>
 			</excludes>
