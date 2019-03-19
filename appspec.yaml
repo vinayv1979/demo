@@ -1,0 +1,8 @@
+resources:
+  - name-of-function-to-deploy:
+      type: "AWS::Lambda::Function"
+      properties:
+        name: VinayDemo
+        alias: VD
+        currentversion: 1.0
+        targetversion: 1.0
