@@ -6,3 +6,4 @@ resources:
         alias: VD
         currentversion: 1.0
         targetversion: 1.0
+        s3-location: s3://lambda-function-bucket-eu-west-2-1551707206911/BuildOSMA/target/sss-0.0.1-SNAPSHOT-dep.zip
