@@ -11,4 +11,4 @@ phases:
 artifacts:
   files:
     - target/sss-0.0.1-SNAPSHOT-dep.zip
-    - appspec.yaml
+    - target/appspec.yaml
