@@ -10,5 +10,5 @@ phases:
       - mvn clean package
 artifacts:
   files:
-    - sss-0.0.1-SNAPSHOT-dep.zip
-    - target/appspec.yaml
+    - target/sss-0.0.1-SNAPSHOT-dep.zip
+    - appspec.yaml
