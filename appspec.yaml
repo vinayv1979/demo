@@ -1,5 +1,5 @@
 resources:
-  - name-of-function-to-deploy:
+  - sssbank:
       type: "AWS::Lambda::Function"
       properties:
         name: VinayDemo
