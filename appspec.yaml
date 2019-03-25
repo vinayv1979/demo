@@ -1,9 +1,12 @@
-resources:
-  - sssbank:
-      type: "AWS::Lambda::Function"
-      properties:
-        name: VinayDemo
-        alias: VD
-        currentversion: 1.0
-        targetversion: 1.0
-        
+version: 0.0
+Resources:
+  - test:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "test"
+        Alias: "TEST123"
+        CurrentVersion: "1"
+        TargetVersion: "2"
+Hooks:
+  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
+  - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
