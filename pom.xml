@@ -19,6 +19,7 @@
 			<version>0.5</version> <!-- 0.5-SNAPSHOT -->
 		</dependency>
 
+		
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-lambda-java-core</artifactId>
