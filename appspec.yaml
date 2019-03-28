@@ -1,9 +1,9 @@
 version: 0.0
-Resources:
-  - test:
-      Type: AWS::Lambda::Function
+resources:
+  - test12:
+      Type: "AWS::Lambda::Function"
       Properties:
-        Name: "test"
+        Name: "test34"
         Alias: "TEST123"
         CurrentVersion: "1"
         TargetVersion: "2"
