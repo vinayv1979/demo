@@ -7,6 +7,10 @@ Resources:
         Alias: "TEST123"
         CurrentVersion: "1"
         TargetVersion: "2"
+        
+files:
+  - source: /target/sss-0.0.1-SNAPSHOT-dep.zip
 Hooks:
   - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
   - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
+  - LifeCycleEvent: ""
