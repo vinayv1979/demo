@@ -1,5 +1,5 @@
 version: 0.0
-resources:
+Resources:
   - test12:
       Type: "AWS::Lambda::Function"
       Properties:
