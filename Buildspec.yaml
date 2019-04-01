@@ -10,5 +10,5 @@ phases:
       - mvn clean package
 artifacts:
     files:
-        - deploy/*
+        - target/*
     discard-paths: yes
