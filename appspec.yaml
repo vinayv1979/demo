@@ -1,16 +1,12 @@
 version: 0.0
 Resources:
-  - test12:
+  - test1:
       Type: "AWS::Lambda::Function"
       Properties:
-        Name: "test34"
-        Alias: "TEST123"
+        Name: "test1"
+        Alias: "cool1"
         CurrentVersion: "1"
-        TargetVersion: "2"
+        TargetVersion: "1"
         
 files:
   - source: /target/sss-0.0.1-SNAPSHOT-dep.zip
-Hooks:
-  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
-  - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
-  - LifeCycleEvent: ""

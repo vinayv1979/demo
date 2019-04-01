@@ -10,5 +10,6 @@ phases:
       - mvn clean package
 artifacts:
     files:
-        - target/*
+        - target/sss-0.0.1-SNAPSHOT-dep.zip
+        - target/appspec.yaml
     discard-paths: yes
