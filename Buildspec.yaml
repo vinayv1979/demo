@@ -9,6 +9,6 @@ phases:
       - echo Build completed on `date`
       - mvn clean package
 artifacts:
-  files:
-    - target/sss-0.0.1-SNAPSHOT-dep.zip
-    - appspec.yaml
+    files:
+        - deploy/*
+    discard-paths: yes
